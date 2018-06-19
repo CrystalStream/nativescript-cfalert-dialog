@@ -3,7 +3,7 @@
     "version": "1.0.6",
     "description": "CFAlert Dialog wrapper for NativeScript",
     "main": "cfalert-dialog",
-    "typings": "index.d.ts",
+    "typings": "src/index.d.ts",
     "nativescript": {
         "platforms": {
             "android": "3.0.0",
@@ -58,16 +58,9 @@
         "multi select list",
         "single choice list"
     ],
-    "author": {
-        "name": "MultiShiv19",
-        "email": "sp@shiv19.com"
-    },
     "repository": {
-        "url": "https://github.com/shiv19/nativescript-cfalert-dialog",
+        "url": "https://github.com/CrystalStream/nativescript-cfalert-dialog",
         "type": "git"
-    },
-    "bugs": {
-        "url": "https://github.com/shiv19/nativescript-cfalert-dialog/issues"
     },
     "license": "Apache-2.0",
     "homepage": "https://github.com/shiv19/nativescript-cfalert-dialog",
