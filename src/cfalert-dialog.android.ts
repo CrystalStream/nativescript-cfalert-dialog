@@ -68,37 +68,39 @@ export interface DialogOptions {
 
 declare const com: any;
 declare const android: any;
-const Builder = com.crowdfire.cfalertdialog.CFAlertDialog.Builder;
+
+// Fix for android;
+const Builder = com.crowdfire.cfalertdialog.CFAlertDialog.Builder || {};
 
 const notificationStyle =
-    com.crowdfire.cfalertdialog.CFAlertDialog.CFAlertStyle.NOTIFICATION;
-const alertStyle = com.crowdfire.cfalertdialog.CFAlertDialog.CFAlertStyle.ALERT;
+    com.crowdfire.cfalertdialog.CFAlertDialog.CFAlertStyle.NOTIFICATION || {};
+const alertStyle = com.crowdfire.cfalertdialog.CFAlertDialog.CFAlertStyle.ALERT || {};
 const bottomSheetStyle =
-    com.crowdfire.cfalertdialog.CFAlertDialog.CFAlertStyle.BOTTOM_SHEET;
-const styles = [notificationStyle, alertStyle, bottomSheetStyle];
+    com.crowdfire.cfalertdialog.CFAlertDialog.CFAlertStyle.BOTTOM_SHEET || {};
+const styles = [notificationStyle, alertStyle, bottomSheetStyle] || {};
 
 const actionDefault =
-    com.crowdfire.cfalertdialog.CFAlertDialog.CFAlertActionStyle.DEFAULT;
+    com.crowdfire.cfalertdialog.CFAlertDialog.CFAlertActionStyle.DEFAULT || {};
 const actionNegative =
-    com.crowdfire.cfalertdialog.CFAlertDialog.CFAlertActionStyle.NEGATIVE;
+    com.crowdfire.cfalertdialog.CFAlertDialog.CFAlertActionStyle.NEGATIVE || {};
 const actionPositive =
-    com.crowdfire.cfalertdialog.CFAlertDialog.CFAlertActionStyle.POSITIVE;
-const actionStyles = [actionDefault, actionNegative, actionPositive];
+    com.crowdfire.cfalertdialog.CFAlertDialog.CFAlertActionStyle.POSITIVE || {};
+const actionStyles = [actionDefault, actionNegative, actionPositive] || {};
 
 const alignStart =
-    com.crowdfire.cfalertdialog.CFAlertDialog.CFAlertActionAlignment.START;
+    com.crowdfire.cfalertdialog.CFAlertDialog.CFAlertActionAlignment.START || {};
 const alignEnd =
-    com.crowdfire.cfalertdialog.CFAlertDialog.CFAlertActionAlignment.END;
+    com.crowdfire.cfalertdialog.CFAlertDialog.CFAlertActionAlignment.END || {};
 const alignCenter =
-    com.crowdfire.cfalertdialog.CFAlertDialog.CFAlertActionAlignment.CENTER;
+    com.crowdfire.cfalertdialog.CFAlertDialog.CFAlertActionAlignment.CENTER || {};
 const alignJustified =
-    com.crowdfire.cfalertdialog.CFAlertDialog.CFAlertActionAlignment.JUSTIFIED;
-const alignment = [alignStart, alignEnd, alignCenter, alignJustified];
+    com.crowdfire.cfalertdialog.CFAlertDialog.CFAlertActionAlignment.JUSTIFIED || {};
+const alignment = [alignStart, alignEnd, alignCenter, alignJustified] || {};
 
-const gravityStart = android.view.Gravity.START;
-const gravityCenterHorizontal = android.view.Gravity.CENTER_HORIZONTAL;
-const gravityEnd = android.view.Gravity.END;
-const gravity = [gravityStart, gravityCenterHorizontal, gravityEnd];
+const gravityStart = android.view.Gravity.START || {};
+const gravityCenterHorizontal = android.view.Gravity.CENTER_HORIZONTAL || {};
+const gravityEnd = android.view.Gravity.END || {};
+const gravity = [gravityStart, gravityCenterHorizontal, gravityEnd] || {};
 
 class Listener implements android.content.DialogInterface.OnClickListener {
     public onClick(dialog, which) {
