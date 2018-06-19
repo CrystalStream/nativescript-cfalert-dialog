@@ -1,9 +1,9 @@
 {
-    "name": "nativescript-cfalert-dialog forked",
+    "name": "nativescript-cfalert-dialog-forked",
     "version": "1.0.6",
     "description": "CFAlert Dialog wrapper for NativeScript",
     "main": "cfalert-dialog",
-    "typings": "src/index.d.ts",
+    "typings": "index.d.ts",
     "nativescript": {
         "platforms": {
             "android": "3.0.0",
